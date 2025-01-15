@@ -5,7 +5,7 @@
       <LocalizedName description="New Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.1</Version>
+    <Version>1.0.0.2</Version>
     <Managed>1</Managed>
     <Publisher>
       <UniqueName>PowerPlatform</UniqueName>
@@ -86,11 +86,6 @@
       <RootComponent type="431" schemaName="ppl_username ppl_logo" behavior="0" />
       <RootComponent type="432" schemaName="ppl_username" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="connectionreference" displayName="rc_Dataverse" solution="Active" id.connectionreferencelogicalname="rc_Dataverse" />
-        <Dependent type="29" displayName="Forgot Password" id="{f6952a0b-e0d1-ef11-a72e-7c1e523d86fe}" />
-      </MissingDependency>
-    </MissingDependencies>
+    <MissingDependencies />
   </SolutionManifest>
 </ImportExportXml>
