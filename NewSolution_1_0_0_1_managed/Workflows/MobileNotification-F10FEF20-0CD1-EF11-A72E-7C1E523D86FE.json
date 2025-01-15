@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_twilio": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "ppl_sharedtwilio_0feeb"
+        },
+        "api": {
+          "name": "shared_twilio"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "63243372-026d-44f7-9954-eeb31d83fc43"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "phone number",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_2": {
+                  "title": "amount",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1",
+                "text_2"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Send_Text_Message_(SMS)": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "3cedbfaa-f45a-4e54-a4f3-5109c86178fb"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_twilio",
+              "operationId": "SendMessage",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_twilio"
+            },
+            "parameters": {
+              "sendMessageRequest/from": "+12525915711",
+              "sendMessageRequest/to": "+91@{triggerBody()['text']}",
+              "sendMessageRequest/body": "Hello @{triggerBody()['text_1']},\nPlease pay ₹ @{triggerBody()['text_2']} to mobile number +910000000000 to proceed with your order with \" Quick Orders \".\nThank You"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

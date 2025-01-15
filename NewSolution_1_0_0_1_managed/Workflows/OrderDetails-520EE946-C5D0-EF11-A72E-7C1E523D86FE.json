@@ -1,0 +1,191 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_onedriveforbusiness": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "ppl_sharedonedriveforbusiness_bb183"
+        },
+        "api": {
+          "name": "shared_onedriveforbusiness"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "ppl_sharedoffice365_ff606"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "3de38270-a617-4fa1-adf2-1948c2f8eeb2"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "order details",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "address",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_2": {
+                  "title": "vendor detail",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1",
+                "text_2"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Create_HTML_table": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "239bbec8-cdea-453a-bb55-2b4bd180c757"
+          },
+          "type": "Table",
+          "inputs": {
+            "from": "@json(triggerBody()['text'])",
+            "format": "HTML"
+          }
+        },
+        "Create_file_in_One_Drive": {
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e98bfb08-0b98-4508-9ab8-06134f48f7c4"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "folderPath": "/",
+              "name": "Order Details.html",
+              "body": "@outputs('Compose')"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Convert_file_to_pdf": {
+          "runAfter": {
+            "Create_file_in_One_Drive": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fd8e5a94-b279-4f90-a225-e13b4c5ea9b2"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "ConvertFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "id": "@outputs('Create_file_in_One_Drive')?['body/Id']",
+              "type": "PDF"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Send_an_email_(V2)": {
+          "runAfter": {
+            "Convert_file_to_pdf": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3d08ea70-ab93-4b63-9329-ae9b6bae0956"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "pg7512@TCSS966.onmicrosoft.com",
+              "emailMessage/Subject": "Your order details from - \" @{split(triggerBody()['text_2'],'-')[6]} \".",
+              "emailMessage/Body": "<p>Hello @{split(triggerBody()['text_2'],'-')[7]},<br>\n<br>\nThank you for your order. It will be delivered to you in short time.<br>\nPlease find the details of your order in the attached file.<br>\n<br>\n<span style=\"font-size: 12px\">Warm Regards</span>,<br>\n<em><strong>Quick Orders<br>\n</strong></em></p>",
+              "emailMessage/Attachments": [
+                {
+                  "Name": "@outputs('Convert_file_to_pdf')?['headers/x-ms-file-name']",
+                  "ContentBytes": "@body('Convert_file_to_pdf')"
+                }
+              ],
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Compose": {
+          "runAfter": {
+            "Create_HTML_table": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c1ea737f-1b06-4862-a640-b61a98d9713c"
+          },
+          "type": "Compose",
+          "inputs": "<style> \ntable { \nborder-collapse: collapse;  \nwidth: 100%; \npadding: 0%;\n\n}\nth { \nbackground-color: #3493E6; \ncolor: black;  \npadding: 8px;  \ntext-align: left;  \nborder: 1px solid black; \n}\ntd {  \npadding: 8px; \ntext-align: left; \nborder: 1px solid black; \n}\nbody {\n  border: 3px solid black;\n  padding: 90px;\n  margin: 0;\n  box-sizing: border-box;\n}\nhtml, body {\n  height: 100%;\n  width: 100%;\n  box-sizing: border-box;\n}\n</style>\n\n<h1 style=\"text-align: center;\">Welcome to \" @{split(triggerBody()['text_2'],'-')[6]} \"</h1><br>\nWe hope you have enjoyed ordering here. \nPlease find the details of your order below.<br><br>\n@{body('Create_HTML_table')}<br><br>\n<p>\n<b>Total Price (Rs)            : </b>@{split(triggerBody()['text_2'],'-')[1]}<br>\n<b>Tax & other charges   : </b>@{split(triggerBody()['text_2'],'-')[2]}<br>\n<b>Delivery charges        : </b>@{split(triggerBody()['text_2'],'-')[3]}<br>\n<b>Discount                    : </b>@{split(triggerBody()['text_2'],'-')[4]}<br>\n<b>Final Price (Rs)           : </b>@{split(triggerBody()['text_2'],'-')[5]}<br>\n</p>\n<br>\n<b>Delivery Address : </b><br><br>\n@{triggerBody()['text_1']}<br><br>\nThank you for ordering from <b>@{split(triggerBody()['text_2'],'-')[6]}</b>.<br><br><br>\n<i><b>Please visit us again.</b></i>"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
