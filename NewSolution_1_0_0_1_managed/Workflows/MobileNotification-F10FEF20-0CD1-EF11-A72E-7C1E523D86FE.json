@@ -55,12 +55,20 @@
                   "x-ms-dynamically-added": true,
                   "description": "Please enter your input",
                   "x-ms-content-hint": "TEXT"
+                },
+                "text_3": {
+                  "title": "vendor name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
                 }
               },
               "required": [
                 "text",
                 "text_1",
-                "text_2"
+                "text_2",
+                "text_3"
               ]
             }
           }
@@ -82,7 +90,7 @@
             "parameters": {
               "sendMessageRequest/from": "+12525915711",
               "sendMessageRequest/to": "+91@{triggerBody()['text']}",
-              "sendMessageRequest/body": "Hello @{triggerBody()['text_1']},\nPlease pay ₹ @{triggerBody()['text_2']} to mobile number +910000000000 to proceed with your order with \" Quick Orders \".\nThank You"
+              "sendMessageRequest/body": "Hello @{triggerBody()['text_1']},\n\nGreetings for the day.\n\nPlease pay ₹ @{triggerBody()['text_2']} to mobile number +91 7860429454 to proceed with your order at \"@{triggerBody()['text_3']}\".\n\nThank You,\n@{triggerBody()['text_3']}"
             },
             "authentication": "@parameters('$authentication')"
           }
@@ -90,7 +98,7 @@
       },
       "outputs": {}
     },
-    "templateName": null
+    "templateName": ""
   },
   "schemaVersion": "1.0.0.0"
 }

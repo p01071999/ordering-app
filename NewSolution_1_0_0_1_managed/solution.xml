@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.24122.148" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24122.148" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24123.00208">
+<ImportExportXml version="9.2.24122.148" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24122.148" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.24124.00146">
   <SolutionManifest>
     <UniqueName>NewSolution</UniqueName>
     <LocalizedNames>
       <LocalizedName description="New Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <Managed>1</Managed>
     <Publisher>
       <UniqueName>PowerPlatform</UniqueName>
@@ -77,6 +77,7 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="ppl_addressdetails" behavior="0" />
       <RootComponent type="1" schemaName="ppl_username" behavior="0" />
       <RootComponent type="1" schemaName="ppl_usernamemenu" behavior="0" />
       <RootComponent type="29" id="{520ee946-c5d0-ef11-a72e-7c1e523d86fe}" behavior="0" />
