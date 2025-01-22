@@ -164,9 +164,10 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
             },
             "parameters": {
-              "emailMessage/To": "pg7512@TCSS966.onmicrosoft.com",
+              "emailMessage/To": "@split(triggerBody()['text_2'],'-')[8]",
               "emailMessage/Subject": "Your order details from - \" @{split(triggerBody()['text_2'],'-')[6]} \".",
               "emailMessage/Body": "<p><span style=\"font-family: georgia\"><em>Hello </em></span><span style=\"font-family: georgia\"><em>@{split(triggerBody()['text_2'], '-')[7]}</em></span><span style=\"font-family: georgia\"><em>,<br>\n<br>\nThank you for your order. It will be delivered to you in short time.<br>\nPlease find the details of your order in the attached file.<br>\n</em></span><span style=\"font-family: georgia\"><em></em></span><span style=\"font-family: georgia\"><em><br>\n<br>\n</em></span><span style=\"font-size: 12px; font-family: georgia\"><em><strong>Warm Regards</strong></em></span><span style=\"font-family: georgia\"><em>,<br>\n</em></span><span style=\"font-family: georgia\"><em>@{split(triggerBody()['text_2'], '-')[6]}</em></span><span style=\"font-family: georgia\"><em></em></span></p>",
+              "emailMessage/Bcc": "pg7512@TCSS966.onmicrosoft.com",
               "emailMessage/Attachments": [
                 {
                   "Name": "@outputs('Convert_file_to_pdf')?['headers/x-ms-file-name']",

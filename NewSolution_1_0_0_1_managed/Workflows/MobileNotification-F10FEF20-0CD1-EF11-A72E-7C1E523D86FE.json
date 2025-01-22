@@ -90,7 +90,7 @@
             "parameters": {
               "sendMessageRequest/from": "+12525915711",
               "sendMessageRequest/to": "+91@{triggerBody()['text']}",
-              "sendMessageRequest/body": "Hello @{triggerBody()['text_1']},\n\nGreetings for the day.\n\nPlease pay ₹ @{triggerBody()['text_2']} to mobile number +91 7860429454 to proceed with your order at \"@{triggerBody()['text_3']}\".\n\nThank You,\n@{triggerBody()['text_3']}"
+              "sendMessageRequest/body": "Hello @{triggerBody()['text_1']},\n\nGreetings for the day.\n\nPlease pay ₹ @{triggerBody()['text_2']} to mobile number +91 7860429454 to proceed with your order on \" Quick Order \".\n\nThank You,\n@{triggerBody()['text_3']}"
             },
             "authentication": "@parameters('$authentication')"
           }

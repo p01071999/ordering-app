@@ -1143,7 +1143,7 @@
                             <row>
                               <cell id="{f882a8ef-05ad-4166-90b7-8e23abc3d7ca}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Status Reason" languagecode="1033" />
                                 </labels>
                                 <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
                               </cell>
@@ -1168,7 +1168,7 @@
                             <row>
                               <cell id="{134fd7de-5cfb-49e4-84f3-c529b460ce2d}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="User Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_username" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_username" disabled="false" />
                               </cell>
@@ -1183,13 +1183,13 @@
                             <row>
                               <cell id="{0276315d-6366-4206-aed4-5096b767a9ac}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
                               </cell>
                               <cell id="{187cc72c-b522-4e32-be7e-80f217cc8095}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Created On" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -1245,7 +1245,7 @@
                             <row>
                               <cell id="{70391585-9063-4b9d-a3f5-aa982cd8792e}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="User Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_username" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_username" />
                               </cell>
@@ -1253,7 +1253,7 @@
                             <row>
                               <cell id="{51c98c13-7fd4-48e2-ac11-0aa588e3c05e}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -1261,7 +1261,7 @@
                             <row>
                               <cell id="{02f063a4-28b0-4b04-9cfd-18ec5675846f}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Address1" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_address1" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ppl_address1" />
                               </cell>
@@ -1269,7 +1269,7 @@
                             <row>
                               <cell id="{b1abe682-958f-49ca-bb0f-de5e994b9629}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Address2" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_address2" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ppl_address2" />
                               </cell>
@@ -1277,7 +1277,7 @@
                             <row>
                               <cell id="{9cd4d2c8-0f92-4881-ad72-020662a8096c}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="City" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_city" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ppl_city" />
                               </cell>
@@ -1285,7 +1285,7 @@
                             <row>
                               <cell id="{33d8c98a-f515-49db-959e-a559f70aa3fe}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="State" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_state" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ppl_state" />
                               </cell>
@@ -1293,7 +1293,7 @@
                             <row>
                               <cell id="{ba2e40b1-33c8-4053-9c78-bca2d89f8693}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Country" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_country" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="ppl_country" />
                               </cell>
@@ -1301,7 +1301,7 @@
                             <row>
                               <cell id="{b4de30a4-0bc2-4764-8a50-ec20fb023e1a}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="PIN Code" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_pincode" classid="{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}" datafieldname="ppl_pincode" />
                               </cell>
@@ -1347,7 +1347,7 @@
                             <row>
                               <cell id="{fb4aae74-7e58-4c1d-bb5b-dfd175d2b976}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="User Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_username" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_username" />
                               </cell>
@@ -1355,7 +1355,7 @@
                             <row>
                               <cell id="{22030cf3-8559-47c1-b46f-b8c15f98082b}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -3102,7 +3102,7 @@
                             <row>
                               <cell id="{6836bcbe-0b2f-4aa5-ba0c-0812286fc658}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Status Reason" languagecode="1033" />
                                 </labels>
                                 <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
                               </cell>
@@ -3127,7 +3127,7 @@
                             <row>
                               <cell id="{69d0bcc6-873f-4427-a189-5ec177132913}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" disabled="false" />
                               </cell>
@@ -3142,13 +3142,13 @@
                             <row>
                               <cell id="{1bcbb785-e747-4c25-91af-58ed420c1298}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
                               </cell>
                               <cell id="{52e26ba9-677c-4dc5-ba29-6e8bee3b7702}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Created On" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -3204,7 +3204,7 @@
                             <row>
                               <cell id="{3341ac41-6fc4-4d8c-98d5-cf235b81dd77}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" />
                               </cell>
@@ -3212,7 +3212,7 @@
                             <row>
                               <cell id="{b9435b6c-49ea-4417-9d10-d9f626d59bbe}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -3258,7 +3258,7 @@
                             <row>
                               <cell id="{59a9ace8-4446-40e0-8aa5-e7247f0c9149}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" />
                               </cell>
@@ -3266,7 +3266,7 @@
                             <row>
                               <cell id="{f27c3057-ae3e-47ca-95e9-bf9b2cc7fbc2}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -4700,7 +4700,7 @@
                             <row>
                               <cell id="{c511d175-a60b-459b-aecd-6d9a0b1d5677}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Status Reason" languagecode="1033" />
                                 </labels>
                                 <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
                               </cell>
@@ -4725,7 +4725,7 @@
                             <row>
                               <cell id="{de3ac72a-bd4b-4cda-b2d7-c5edde289835}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" disabled="false" />
                               </cell>
@@ -4740,13 +4740,13 @@
                             <row>
                               <cell id="{3ee33421-f434-4587-95cc-00adcd292692}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
                               </cell>
                               <cell id="{5aa6c51d-c2c7-49fb-bccc-61184d2cd694}" showlabel="true" locklevel="0">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Created On" languagecode="1033" />
                                 </labels>
                                 <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
                               </cell>
@@ -4802,7 +4802,7 @@
                             <row>
                               <cell id="{b8d42f06-9f61-4f10-89bb-8d0b964faa82}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" />
                               </cell>
@@ -4810,7 +4810,7 @@
                             <row>
                               <cell id="{9c8f3c7b-ad94-4a36-b88e-8dda26a8d116}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -4856,7 +4856,7 @@
                             <row>
                               <cell id="{98d03b34-7a42-4d17-af5f-8666418a8002}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Name" languagecode="1033" />
                                 </labels>
                                 <control id="ppl_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ppl_name" />
                               </cell>
@@ -4864,7 +4864,7 @@
                             <row>
                               <cell id="{c7414096-eb4c-4eba-b373-8adb7da27665}">
                                 <labels>
-                                  <label description="" languagecode="1033" />
+                                  <label description="Owner" languagecode="1033" />
                                 </labels>
                                 <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                               </cell>
@@ -5632,11 +5632,11 @@
   <CanvasApps>
     <CanvasApp>
       <Name>ppl_myapp_a9945</Name>
-      <AppVersion>2025-01-18T08:22:55Z</AppVersion>
+      <AppVersion>2025-01-20T18:41:06Z</AppVersion>
       <Status>Ready</Status>
       <CreatedByClientVersion>3.25011.8.0</CreatedByClientVersion>
       <MinClientVersion>3.25011.8.0</MinClientVersion>
-      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25011.8","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20250117T174616Z-3.25011.8.0"}</Tags>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25011.8","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"true","isUnifiedRootApp":"false","sienaVersion":"20250120T183222Z-3.25011.8.0"}</Tags>
       <IsCdsUpgraded>0</IsCdsUpgraded>
       <GalleryItemId xsi:nil="true"></GalleryItemId>
       <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
@@ -5645,7 +5645,7 @@
       <CommitMessage xsi:nil="true"></CommitMessage>
       <Publisher xsi:nil="true"></Publisher>
       <AuthorizationReferences>[]</AuthorizationReferences>
-      <ConnectionReferences>{"d683d5c4-2898-43b8-9d82-3ded2788c360":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png","dataSources":["OrderDetails"],"dependencies":["0e53afc8-ddb8-41b8-b201-a5a888f3c779","7831e718-5206-4c93-8393-66479dd2f098"],"dependents":[],"parameterHints":{"workflowName":{"value":"00ddbcff-e979-42b4-8079-9324ce489e44"},"workflowEntityId":{"value":"520ee946-c5d0-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Order Details"},"0e53afc8-ddb8-41b8-b201-a5a888f3c779":{"value":"shared_onedriveforbusiness"},"7831e718-5206-4c93-8393-66479dd2f098":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"00ddbcff-e979-42b4-8079-9324ce489e44"},"workflowEntityId":{"value":"520ee946-c5d0-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Order Details"},"shared_onedriveforbusiness":{"value":"0e53afc8-ddb8-41b8-b201-a5a888f3c779"},"shared_office365":{"value":"7831e718-5206-4c93-8393-66479dd2f098"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"0e53afc8-ddb8-41b8-b201-a5a888f3c779":{"id":"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness","displayName":"OneDrive for Business","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png","dataSources":[],"dependencies":[],"dependents":["d683d5c4-2898-43b8-9d82-3ded2788c360"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"7831e718-5206-4c93-8393-66479dd2f098":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1722/1.0.1722.3975/office365/icon.png","dataSources":[],"dependencies":[],"dependents":["d683d5c4-2898-43b8-9d82-3ded2788c360"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"b9a3b63a-ca42-41b1-a8ed-0ac183b23c0e":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png","dataSources":["MobileNotification"],"dependencies":["d1127e3c-1c69-4334-aa28-15bdaf6f9173"],"dependents":[],"parameterHints":{"workflowName":{"value":"7ffe3b17-b647-4a21-b21c-a4ffc60a3f79"},"workflowEntityId":{"value":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Mobile Notification"},"d1127e3c-1c69-4334-aa28-15bdaf6f9173":{"value":"shared_twilio"}},"parameterHintsV2":{"workflowName":{"value":"7ffe3b17-b647-4a21-b21c-a4ffc60a3f79"},"workflowEntityId":{"value":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Mobile Notification"},"shared_twilio":{"value":"d1127e3c-1c69-4334-aa28-15bdaf6f9173"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"d1127e3c-1c69-4334-aa28-15bdaf6f9173":{"id":"/providers/microsoft.powerapps/apis/shared_twilio","xrmConnectionReferenceLogicalName":"ppl_sharedtwilio_0feeb","displayName":"Twilio","executionRestrictions":{"version":1,"modifiedOn":"2025-01-18 08:22:51","appVer":"3.25011.8","apiId":"unknown","policy":"{\"type\":\"unused\"}"},"iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1690/1.0.1690.3719/twilio/icon.png","dataSources":[],"dependencies":[],"dependents":["b9a3b63a-ca42-41b1-a8ed-0ac183b23c0e"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"sharedConnectionId":"ee2b9842-626f-4d1f-a716-d415f107b566","bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+      <ConnectionReferences>{"b9a3b63a-ca42-41b1-a8ed-0ac183b23c0e":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png","dataSources":["MobileNotification"],"dependencies":["d1127e3c-1c69-4334-aa28-15bdaf6f9173"],"dependents":[],"parameterHints":{"workflowName":{"value":"458fc3da-f843-479b-ba0e-8b0e83901ceb"},"workflowEntityId":{"value":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Mobile Notification"},"d1127e3c-1c69-4334-aa28-15bdaf6f9173":{"value":"shared_twilio"}},"parameterHintsV2":{"workflowName":{"value":"458fc3da-f843-479b-ba0e-8b0e83901ceb"},"workflowEntityId":{"value":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Mobile Notification"},"shared_twilio":{"value":"d1127e3c-1c69-4334-aa28-15bdaf6f9173"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"d1127e3c-1c69-4334-aa28-15bdaf6f9173":{"id":"/providers/microsoft.powerapps/apis/shared_twilio","xrmConnectionReferenceLogicalName":"ppl_sharedtwilio_0feeb","displayName":"Twilio","executionRestrictions":{"version":1,"modifiedOn":"2025-01-20 18:41:03","appVer":"3.25011.8","apiId":"unknown","policy":"{\"type\":\"unused\"}"},"iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1690/1.0.1690.3719/twilio/icon.png","dataSources":[],"dependencies":[],"dependents":["b9a3b63a-ca42-41b1-a8ed-0ac183b23c0e"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"sharedConnectionId":"86b77d69-aa4a-42a9-aed4-37a8b34b43c7","bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"d683d5c4-2898-43b8-9d82-3ded2788c360":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png","dataSources":["OrderDetails"],"dependencies":["a982fffe-3ee8-4be2-9865-54937936e6c9","866acfbe-c3ba-44f6-9fa0-25cfef647831"],"dependents":[],"parameterHints":{"workflowName":{"value":"c5aad0fd-d624-4cb2-b738-5cb658e079b5"},"workflowEntityId":{"value":"520ee946-c5d0-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Order Details"},"a982fffe-3ee8-4be2-9865-54937936e6c9":{"value":"shared_onedriveforbusiness"},"866acfbe-c3ba-44f6-9fa0-25cfef647831":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"c5aad0fd-d624-4cb2-b738-5cb658e079b5"},"workflowEntityId":{"value":"520ee946-c5d0-ef11-a72e-7c1e523d86fe"},"workflowDisplayName":{"value":"Order Details"},"shared_onedriveforbusiness":{"value":"a982fffe-3ee8-4be2-9865-54937936e6c9"},"shared_office365":{"value":"866acfbe-c3ba-44f6-9fa0-25cfef647831"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"a982fffe-3ee8-4be2-9865-54937936e6c9":{"id":"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness","displayName":"OneDrive for Business","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png","dataSources":[],"dependencies":[],"dependents":["d683d5c4-2898-43b8-9d82-3ded2788c360"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"866acfbe-c3ba-44f6-9fa0-25cfef647831":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1722/1.0.1722.3975/office365/icon.png","dataSources":[],"dependencies":[],"dependents":["d683d5c4-2898-43b8-9d82-3ded2788c360"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
       <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"UserNames":{"entitySetName":"ppl_usernames","logicalName":"ppl_username"},"UserMenus":{"entitySetName":"ppl_usernamemenus","logicalName":"ppl_usernamemenu"},"Address Detailses":{"entitySetName":"ppl_addressdetailses","logicalName":"ppl_addressdetails"},"Users":{"entitySetName":"systemusers","logicalName":"systemuser"}}}}</DatabaseReferences>
       <AppComponents>[]</AppComponents>
       <AppComponentDependencies>[]</AppComponentDependencies>
@@ -5655,7 +5655,7 @@
       <AdminControlBypassConsent>0</AdminControlBypassConsent>
       <EmbeddedApp xsi:nil="true"></EmbeddedApp>
       <IntroducedVersion>1.0</IntroducedVersion>
-      <CdsDependencies>{"cdsdependencies":[{"dependencyid":"520ee946-c5d0-ef11-a72e-7c1e523d86fe","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe","componenttype":29,"componenttypeplatformname":"Workflow"},{"logicalname":"ppl_username","componenttype":1},{"logicalname":"ppl_usernamemenu","componenttype":1},{"logicalname":"ppl_addressdetails","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"ppl_sharedtwilio_0feeb","componenttype":10121,"componenttypeplatformname":"ConnectionReference"}]}</CdsDependencies>
+      <CdsDependencies>{"cdsdependencies":[{"dependencyid":"f10fef20-0cd1-ef11-a72e-7c1e523d86fe","componenttype":29,"componenttypeplatformname":"Workflow"},{"dependencyid":"520ee946-c5d0-ef11-a72e-7c1e523d86fe","componenttype":29,"componenttypeplatformname":"Workflow"},{"logicalname":"ppl_username","componenttype":1},{"logicalname":"ppl_usernamemenu","componenttype":1},{"logicalname":"ppl_addressdetails","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"ppl_sharedtwilio_0feeb","componenttype":10121,"componenttypeplatformname":"ConnectionReference"}]}</CdsDependencies>
       <IsCustomizable>1</IsCustomizable>
       <BackgroundImageUri>/CanvasApps/ppl_myapp_a9945_BackgroundImageUri</BackgroundImageUri>
       <DocumentUri>/CanvasApps/ppl_myapp_a9945_DocumentUri.msapp</DocumentUri>
